@@ -113,6 +113,7 @@ nav .icon {
     width: 50vw;
     height: 100vh;
     transition: .5s;
+    text-align: center;
 }
 
 /* small size */
