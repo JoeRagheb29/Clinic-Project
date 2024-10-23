@@ -1,0 +1,390 @@
+* {
+    padding: 0;
+    margin: 0; 
+}
+
+body {
+    line-height: 1.6;
+    font-family: "Cairo", sans-serif;
+    text-align: right;
+    direction: rtl;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    width: 85%;
+    padding: 3vb;
+    margin: 2vh auto;
+    border-radius: 15px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.book-now {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.book-now:hover {
+    background-color: #006EDD;
+    transition: .3s;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    font-family: "Cairo", sans-serif;
+    font-weight: bold;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul a:hover {
+    color: #007BFF;
+    transition: .3s;
+}
+
+.icon {
+    display: none;
+    font-size: 25px;
+}
+
+.Dr {
+    font-size: 26px;
+    font-style: italic;
+    font-family: Lucida Calligraphy;
+    letter-spacing: -0.09em;
+    text-decoration-line: none;
+}
+
+@media (max-width: 440px) {
+    .Dr {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .book-now {
+        font-size: 14px;
+        padding: 1vb 2vb;
+    }
+}  
+
+@media (max-width: 972px) {
+    nav {
+        position: relative;
+    }
+
+    nav ul {
+        display: none;
+    }
+    
+    .icon {
+        display: block;
+    }
+
+    nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 120px;
+    }
+}
+
+.forMobile {
+    background-color: #ffffffbe;
+    display: flex;
+    flex-direction: column;
+    padding: 5vb 0;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    transform: translateX(100%);
+    z-index: 100;
+    width: 50vw;
+    height: 100vh;
+    transition: .5s;
+    list-style-type: none;
+}
+
+.forMobile li {
+    padding: 1vb;
+}
+
+.forMobile li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.btn-primary {
+    padding: 2vb 3vb;
+}
+
+/* small size */
+@media (max-width: 768px) {
+    .forScreen {
+        display: none;
+    }
+
+    nav .icon {
+        display: block;
+    }
+}
+
+/* big size */
+@media (min-width: 768px) {
+    .forScreen {
+        display: flex;
+    }
+
+    .forMobile {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+.upper-home {
+    padding: 5vb 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+}
+
+@media (max-width: 768px) {
+    .upper-home {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+}
+
+.upper-home .content {
+    max-width: 50%;
+}
+
+.upper-home .content h1 {
+    font-family: "Tajawal" , serif;
+    font-size: 52px;
+    font-weight: 500;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .upper-home .content {
+        max-width: 100%;
+    }
+
+    .upper-home .content h1 {
+        font-size: 40px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.upper-home .content p {
+    padding: 2vb 0;
+}
+
+.upper-home .content .booking {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.upper-home .content .booking a {
+    padding: 1vb 5vb;
+}
+
+
+.upper-home .content .booking .following {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.upper-home .content .booking .following .phone-num {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.upper-home .content .booking .following .phone-icon {
+    padding: 10px;
+    color: #fff;
+    background-color: #007BFF;
+    border-radius: 5px;
+}
+
+.upper-home .image {
+    position: relative;
+}
+
+.upper-home .image img {
+    width: 300px;
+}
+
+.upper-home .image::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -55px;
+    border: 4px dashed;
+    border-color: Skyblue;
+    border-radius: 50%;
+    width: 59vb;
+    height: 59vb;
+    z-index: -10;
+}
+
+.upper-home .image::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: -5px;
+    border: 1px dashed #007BFF;
+    border-radius: 50%;
+    width: 45vb;
+    height: 45vb;
+    z-index: -10;
+}
+
+.upper-home .image .ear {
+    padding: 10px;
+    color: #fff;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #007BFF;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.upper-home .image #ear1 {
+    top: 40px;
+    left: 310px;
+}
+
+.upper-home .image #ear2 {
+    top: 270px;
+    left: 340px;
+}
+
+.upper-home .image #ear3 {
+    top: 270px;
+    left: -55px;
+}
+
+.upper-home .image #ear4 {
+    top: 140px;
+    left: 290px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+
+.upper-home .image #ear5 {
+    top: 100px;
+    left: -25px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+
+.fa-circle-chevron-down { 
+    color: #fff;
+    background-color: #111;
+    border: 2px solid #111;
+    border-radius: 50%;
+    transform: rotate(90deg);
+}
+
+a:hover {
+    color: #007BFF;
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+a:hover + .fa-circle-chevron-down {
+    background-color: #00aaff;
+    transform: translate(-10px , 0) rotate(90deg) scale(1.1);
+    transition: .3s;
+}
+
+.lower-home {
+    display: flex;
+    text-align: center;
+    background-color: #E6F6FE;
+    border-radius: 10px;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .lower-home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+.lower-home .part {
+    flex-grow: 1;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin: 20px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.lower-home .part img {
+    width: 25px;
+    background-color: #00aaff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.lower-home .part h2 {
+    font-weight: normal;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.lower-home .part p {
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.lower-home .part i {
+    font-size: 17px;
+}
+
+.lower-home .part a {
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+}
