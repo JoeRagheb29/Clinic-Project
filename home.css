@@ -388,3 +388,137 @@ a:hover + .fa-circle-chevron-down {
     font-size: 15px;
     font-weight: bold;
 }
+
+#why-we {
+    padding: 12vb 0;
+}
+
+#why-we .welcome {
+    display: flex;
+    justify-content: space-around;
+    gap: 2vb;
+}
+
+@media (max-width: 768px) {
+    #why-we .welcome {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 10vh;
+        padding: 10px 0;
+    }
+}
+
+#why-we .welcome .content {
+    max-width: 50%;
+}
+
+#why-we .welcome h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 3vb;
+}
+
+#why-we .welcome p {
+    color: #3C4959;
+    max-width: 500px;
+}
+
+#why-we .welcome img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 25px 25px #00aaff;
+}
+
+#why-we .welcome form {
+    width: 50%;
+    position: relative;
+    display: flex;
+    margin-top: 7vh;
+}
+
+.welcome form input {
+    outline: none;
+    width: 100%;
+    font-family: "Cairo" , sans-serif;
+}
+
+#why-we .welcome form input[type="text"] {
+    height: 100%;
+    padding: 10px;
+    border: 1px solid #CECECE;
+    border-radius: 0 10px 10px 0;
+}
+
+#why-we .welcome form input::placeholder {
+    color: #CFCFCF;
+}
+
+#why-we .welcome form i {
+    position: absolute;
+    right: 120px;
+    top: 15px;
+}
+
+#why-we .welcome form input[type="submit"] {
+    color: #fff;
+    background-color: #007BFF;
+    padding: 1vb 3vb ;
+    text-align: center;
+    border: none;
+    border-radius: 10px 0 0 10px;
+}
+
+#why-we .whyWe {
+    display: flex;
+    justify-content: space-around;
+    gap: 5vb;
+    padding: 22vb 0;
+}
+
+#why-we .whyWe .content {
+    max-width: 55%;
+}
+
+#why-we .whyWe .grid1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8vb;
+}
+
+@media (max-width: 768px) {
+    #why-we .whyWe {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #why-we .whyWe .grid1 {
+        grid-template-columns: 1fr;
+        gap: 3vb;
+    }
+}
+
+#why-we .whyWe h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 5vh;
+}
+
+#why-we .whyWe .grid1 h2 {
+    margin-bottom: 3vh;
+}
+
+#why-we .whyWe .grid1 p {
+    color:#27476085;
+}
+
+#why-we .whyWe img {
+    width: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
