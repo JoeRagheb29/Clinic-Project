@@ -475,7 +475,7 @@ a:hover + .fa-circle-chevron-down {
     display: flex;
     justify-content: space-around;
     gap: 5vb;
-    padding: 22vb 0;
+    padding: 22vb 0 5vb 0;
 }
 
 #why-we .whyWe .content {
@@ -508,9 +508,16 @@ a:hover + .fa-circle-chevron-down {
     font-size: 40px;
     margin-bottom: 5vh;
 }
+  
+#why-we .whyWe i {
+    background-color: #00aaff;
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 2vh;
+}
 
 #why-we .whyWe .grid1 h2 {
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
 }
 
 #why-we .whyWe .grid1 p {
@@ -521,4 +528,68 @@ a:hover + .fa-circle-chevron-down {
     width: 350px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+#stat .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap:3vb;
+    margin: 0vh auto;
+    padding: 3vb;
+    color: #274760;
+    background-image: url("materials/9c27452b4d6d70e0ec5320e47a819979.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#stat .container .box {
+    padding: 8vb;
+}
+
+#stat .container .num {
+    font-size: 32px;
+    font-family: "inter" , sans-serif;
+    font-weight: 700;
+    padding-bottom: 2vh;
+}
+
+#stat .container p {
+    font-size: 16px;
+}
+
+#video {
+    padding: 10vb 0;
+    text-align: center;
+}
+
+.video-info {
+    margin: 5vh auto 18vh auto;
+}
+
+.video-info h2 {
+    font-size: 30px;
+    padding-bottom: 3vh;
+}
+
+.video-info p {
+    font-size: 16px;
+}
+
+#video .video-content {
+    width: 100%;
+
+}
+
+#video video {
+    width: 100%;
+    height: auto;
+}
+
+#video button {
+    padding: 10px 20px;
+    margin-top: 20px;
 }
