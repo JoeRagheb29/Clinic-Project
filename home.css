@@ -39,7 +39,7 @@ header {
 }
 
 .book-now:hover {
-    background-color: #006EDD;
+    color: #fff;
     transition: .3s;
 }
 
@@ -230,11 +230,27 @@ nav ul a:hover {
     justify-content: center;
 }
 
+.phone-num h3 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #00aaff;
+}
+
+.phone-num h5 {
+    font-size: 12px;
+    color: #111;
+}
+
+
 .upper-home .content .booking .following .phone-icon {
     padding: 10px;
     color: #fff;
-    background-color: #007BFF;
-    border-radius: 5px;
+    background-image: linear-gradient(#6ad0ff, #E6F6FE);
+    border-radius: 10px;
+}
+
+.phone-icon i {
+    color: #1376F8;
 }
 
 .upper-home .image {
@@ -362,10 +378,10 @@ a:hover + .fa-circle-chevron-down {
 }
 
 .lower-home .part img {
-    width: 25px;
+    width: 35px;
     background-color: #00aaff;
     border-radius: 50%;
-    padding: 10px;
+    padding: 5px;
 }
 
 .lower-home .part h2 {
@@ -433,7 +449,7 @@ a:hover + .fa-circle-chevron-down {
 }
 
 #why-we .welcome form {
-    width: 50%;
+    width: 65%;
     position: relative;
     display: flex;
     margin-top: 7vh;
@@ -458,7 +474,7 @@ a:hover + .fa-circle-chevron-down {
 
 #why-we .welcome form i {
     position: absolute;
-    right: 120px;
+    right: 130px;
     top: 15px;
 }
 
