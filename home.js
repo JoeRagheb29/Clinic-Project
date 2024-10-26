@@ -13,7 +13,7 @@ window.onload = function() {
         console.log('Clicked X');
         forMobile.style.transform = 'translateX(100%)';
 
-        if(window.innerWidth < 768) {
+        if(window.innerWidth < 972) {
             forScreen.style.display = 'none';
             Icon.style.display = 'block';
         } else {
