@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0; 
+}
+
+body {
+    line-height: 1.6;
+    font-family: "Cairo", sans-serif;
+    text-align: right;
+    direction: rtl;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    width: 85%;
+    padding: 3vb;
+    margin: 2vh auto;
+    border-radius: 15px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.book-now {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.book-now:hover {
+    color: #fff;
+    transition: .3s;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    font-family: "Cairo", sans-serif;
+    font-weight: bold;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul a:hover {
+    color: #007BFF;
+    transition: .3s;
+}
+
+.icon {
+    display: none;
+    font-size: 25px;
+}
+
+.Dr {
+    font-size: 26px;
+    font-style: italic;
+    font-family: Lucida Calligraphy;
+    letter-spacing: -0.09em;
+    text-decoration-line: none;
+}
+
+@media (max-width: 440px) {
+    .Dr {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .book-now {
+        font-size: 14px;
+        padding: 1vb 2vb;
+        text-align: center;
+    }
+}  
+
+@media (max-width: 972px) {
+    nav {
+        position: relative;
+    }
+
+    nav ul {
+        display: none;
+    }
+    
+    .icon {
+        display: block;
+    }
+
+    nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 120px;
+    }
+}
+
+.forMobile {
+    background-color: #ffffffbe;
+    display: flex;
+    flex-direction: column;
+    padding: 5vb 0;
+    text-align: center;
+    transform: translateX(110%);
+    list-style-type: none;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 100;
+    width: 50vw;
+    height: 100vh;
+    transition: .5s;
+}
+
+.forMobile li {
+    padding: 1vb;
+}
+
+.forMobile li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.btn-primary {
+    padding: 2vb 3vb;
+}
+
+/* small size */
+@media (max-width: 971px) {
+    .forScreen {
+        display: none;
+    }
+
+    nav .icon {
+        display: block;
+    }
+}
+
+/* big size */
+@media (min-width: 972px) {
+    .forScreen {
+        display: flex;
+    }
+
+    .forMobile {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+
+#Articles {
+    margin: 8vh 0;
+    font-family: "cairo" , sans-serif;
+}
+
+#Articles .head {
+    width: 100%;
+    padding: 7vh 0;
+}
+
+#Articles .head h3 {
+    font-size: 18px;
+    margin-right: -15px;
+    color:#27476085;
+}
+
+@media (max-width: 776px) {
+    #Articles .head {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5vh;
+    }
+}
+
+#Articles .head h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color:#3C4959;
+}
+
+#Articles .articles {
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: (2,1fr);
+    gap: 2vb;
+}
+
+@media (min-width: 401px) and (max-width: 776px) {
+    #Articles .articles {
+        grid-template-columns: repeat(2,50%);
+        grid-template-rows: (4,1fr);
+        gap: 2vb;
+    }
+}
+
+@media (max-width: 400px) {
+    #Articles .articles {
+        grid-template-columns: repeat(1,1fr);
+        gap: 2vb;
+    }
+}
+
+#Articles .articles .article {
+    padding: 2vb;
+    background-color: #E6F6FE;
+    border-radius: 10px;
+}
+
+#Articles .articles .article:hover {
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.article h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 2vb 0;
+}
+
+.article p {
+    color:#3C4959;
+    font-size: 16px;
+    margin-bottom: 2vh;
+}
+
+.article button {
+    padding: 1vb;
+    background-color:#011632;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.nums {
+    margin: 8vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vb;
+}
+
+.nums .num {
+    padding: 1vb 2vb;
+    border-radius: 5px;
+    box-shadow: 0px 4px 20px 0px #15204612;
+}
+
+.nums .num.active {
+    background-color: #307BC4;
+}
