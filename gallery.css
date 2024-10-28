@@ -325,6 +325,11 @@ nav ul a:hover {
     font-size: 14px;
 }
 
+.map .container iframe {
+
+    margin: auto;
+}
+
 
 footer {
     background-color: #343a40; 

@@ -757,6 +757,17 @@ a:hover + .fa-circle-chevron-down {
     gap: 3vh;
 }
 
+#Branches .card {
+    flex-basis: 25%;
+    height: 40vb;
+}
+
+#Branches .cards i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
 @media (max-width: 776px) {
     #Branches .container {
         padding: 2vb;
@@ -773,18 +784,6 @@ a:hover + .fa-circle-chevron-down {
         padding-top: 2vh;
         margin-bottom: 2vh;
     }
-
-}
-
-#Branches .card {
-    flex-basis: 25%;
-    height: 40vb;
-}
-
-#Branches .cards i {
-    position: absolute;
-    top: 10px;
-    right: 10px;
 }
 
 #Branches .cards img {
@@ -820,6 +819,13 @@ a:hover + .fa-circle-chevron-down {
 #Branches .fa-arrow-right {
     background-color: #fff;
     padding: 1vb 3vb;
+}
+
+@media (max-width: 776px) {
+    #Branches .fa-arrow-left , 
+    #Branches .fa-arrow-right {
+        display: none;
+    }
 }
 
 #Branches .fa-arrow-left:hover , 
@@ -905,6 +911,13 @@ a:hover + .fa-circle-chevron-down {
     color: #fff;
     background-color: #000;
     padding: 1vb 3vb;
+}
+
+@media (max-width: 776px) {
+    #opinions .fa-arrow-left , 
+    #opinions .fa-arrow-right {
+        display: none;
+    }
 }
 
 #opinions .fa-arrow-left:hover , 
