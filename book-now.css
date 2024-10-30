@@ -126,6 +126,7 @@ nav ul a:hover {
     height: 100vh;
     transition: .5s;
     list-style-type: none;
+    text-align: center
 }
 
 .forMobile li {
